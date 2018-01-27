@@ -25,7 +25,7 @@
     <packaging>pom</packaging>
     <artifactId>sparrow-super</artifactId>
     <properties>
-        <sparrow_facade_version>1.0-SNAPSHOT</sparrow_facade_version>
+        <sparrow_version>1.0-SNAPSHOT</sparrow_version>
         <sparrow_cg_version>1.0-SNAPSHOT</sparrow_cg_version>
         <sparrow_context_version>1.0-SNAPSHOT</sparrow_context_version>
         <sparrow_json_version>1.0-SNAPSHOT</sparrow_json_version>
@@ -245,6 +245,8 @@
                     </rules>
                 </configuration>
             </plugin>
+
+
         </plugins>
     </build>
 </project>
