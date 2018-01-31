@@ -43,16 +43,42 @@
 
 
     <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <url>http://mvn.sparrowzoo.com/nexus/content/repositories/releases</url>
-        </repository>
         <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://mvn.sparrowzoo.com/nexus/content/repositories/snapshots</url>
-            <name>Nexus Snapshot Repository</name>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
+
+
+
+    <scm>
+        <url>https://github.com/sparrowzoo/sparrow.git</url>
+        <connection>scm:git:https://github.com/sparrowzoo/sparrow.git</connection>
+        <developerConnection>scm:git:https://github.com/sparrowzoo/sparrow.git</developerConnection>
+        <tag>sparrow-1.0</tag>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>zhanglizhi</name>
+            <email>zh_harry@163.com</email>
+            <organization>sparrowzoo</organization>
+            <organizationUrl>http://www.sparrowzoo.com</organizationUrl>
+        </developer>
+    </developers>
+
 
     <dependencyManagement>
         <dependencies>
@@ -245,6 +271,32 @@
                     </rules>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+                <!--<version>2.9.1</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>attach-javadocs</id>-->
+                        <!--<goals>-->
+                            <!--<goal>jar</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
