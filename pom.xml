@@ -37,6 +37,7 @@
         <sparrow_sharded_jedis_version>1.0-SNAPSHOT</sparrow_sharded_jedis_version>
         <sparrow_rocketmq_client_version>1.0-SNAPSHOT</sparrow_rocketmq_client_version>
         <servlet_api_version>3.0.1</servlet_api_version>
+        <jsp_api_version>2.2</jsp_api_version>
         <cdi_api_version>1.2</cdi_api_version>
         <sparrow_log_version>1.0-SNAPSHOT</sparrow_log_version>
         <sparrow_rocketmq_client_version>1.0-SNAPSHOT</sparrow_rocketmq_client_version>
@@ -100,7 +101,7 @@
             <dependency>
                 <groupId>javax.servlet.jsp</groupId>
                 <artifactId>jsp-api</artifactId>
-                <version>2.2</version>
+                <version>${jsp_api_version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
