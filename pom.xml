@@ -27,7 +27,6 @@
     <properties>
         <sparrow_version>1.0-SNAPSHOT</sparrow_version>
         <sparrow_cg_version>1.0-SNAPSHOT</sparrow_cg_version>
-        <sparrow_context_version>1.0-SNAPSHOT</sparrow_context_version>
         <sparrow_json_version>1.0-SNAPSHOT</sparrow_json_version>
         <sparrow_orm_version>1.0-SNAPSHOT</sparrow_orm_version>
         <sparrow_mvc_version>1.0-SNAPSHOT</sparrow_mvc_version>
