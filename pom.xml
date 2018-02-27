@@ -26,7 +26,7 @@
     <artifactId>sparrow-super</artifactId>
     <properties>
         <sparrow_version>1.0-SNAPSHOT</sparrow_version>
-        <sparrow_cg_version>1.0-SNAPSHOT</sparrow_cg_version>
+        <sparrow_loader_version>1.0-SNAPSHOT</sparrow_loader_version>
         <sparrow_json_version>1.0-SNAPSHOT</sparrow_json_version>
         <sparrow_orm_version>1.0-SNAPSHOT</sparrow_orm_version>
         <sparrow_mvc_version>1.0-SNAPSHOT</sparrow_mvc_version>
